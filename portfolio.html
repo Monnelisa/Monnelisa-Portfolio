@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monnelisa Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="portfolio.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#footer">CV</a></li>
+    </ul>
+  </nav>
+
+  <div id="fullpage">
+    <!-- Card 1: Intro -->
+    <section id="intro" class="section card intro">
+      <!-- Personal Photo -->
+      <div class="intro-photo">
+        <img src="Monnelisa.jpg" alt="Monnelisa Mangalie" />
+      </div>
+      <h1>Monnelisa Mangalie</h1>
+      <div class="scroll-indicator">&gt;</div>
+      <h2 id="job-titles"></h2>
+    </section>
+
+    <!-- Card 2: About Me -->
+    <section id="about" class="section card about">
+      <h1>About Me</h1>
+      <p>
+        I am a Software Quality Assurance Tester experienced in manual and automated testing, including regression, functional, integration, system, and API testing. 
+        I work with Selenium for automation and Jira for bug tracking and project management, ensuring software reliability and high-quality user experiences.
+        Alongside QA, I have strong skills in HTML, CSS, and JavaScript, with knowledge of Python, Java, and C#. 
+        I apply these skills in projects like my Code Blanks Game, showcasing interactive design, dynamic logic, and problem-solving abilities that complement my QA expertise.
+        While my main focus is Software QA, I’m open to opportunities in front-end web development, web design, or application support, leveraging both testing experience and coding skills.
+      </p>
+      <div class="scroll-indicator">&gt;</div>
+    </section>
+
+    <!-- Card 3: Skills -->
+    <section id="skills" class="section card skills">
+      <h1>My Skills</h1>
+      <div class="container-skillbar">
+        <div class="skillbar" data-percent="90%">
+          <div class="skillbar-title"><span>HTML</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">90%</div>
+        </div>
+        <div class="skillbar" data-percent="80%">
+          <div class="skillbar-title"><span>CSS</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div>
+        <div class="skillbar" data-percent="70%">
+          <div class="skillbar-title"><span>JavaScript</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">70%</div>
+        </div>
+        <div class="skillbar" data-percent="75%">
+          <div class="skillbar-title"><span>Python</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">75%</div>
+        </div>
+        <div class="skillbar" data-percent="80%">
+          <div class="skillbar-title"><span>Java</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">80%</div>
+        </div>
+        <div class="skillbar" data-percent="70%">
+          <div class="skillbar-title"><span>Selenium</span></div>
+          <div class="skillbar-bar"></div>
+          <div class="skill-bar-percent">85%</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">&gt;</div>
+    </section>
+
+    <!-- Card 4: Projects -->
+    <section id="projects" class="section card projects">
+      <h1>Projects</h1>
+      <!-- Game Description -->
+      <p class="project-description">
+        My Code Blanks Game includes three modes: <strong>Fill the Blanks</strong>, <strong>Debug This</strong>, and <strong>Multiple Choice</strong>. 
+        Players can choose from multiple languages: HTML, Python, Java, JavaScript, Ruby, and C#. 
+        Levels range from easy, medium, to hard. 
+        Wrong answers trigger a sound alert, and your progress is tracked on the header. 
+        You must score 80% to advance to the next level.
+      </p>
+    <!-- Video of Code Blanks Game -->
+    <div class="project-video">
+      <video controls>
+        <source src="Monnelisa.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      </div>
+      <div class="scroll-indicator">&gt;</div>
+    </section>
+
+    <!-- Card 5: Contact -->
+    <section id="contact" class="section card contact">
+      <h1>Contact Me</h1>
+      <form id="ajax-contact" method="post" action="send.php" class="contact-form">
+        <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>
+        <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required>
+        <textarea name="message" id="message" placeholder="Your Message" class="form-control" required></textarea>
+        <button type="submit" id="submit">Send Message</button>
+      </form>
+      <div id="form-messages"></div>
+      <div class="scroll-indicator">&gt;</div>
+    </section>
+
+    <!-- Card 6: Footer -->
+    <footer id="footer" class="section card footer">
+      <p>CONNECT WITH ME</p>
+      <p>
+        <a href="Monnelisa_CV.pdf" download>📄 Download My CV</a>
+      </p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/monnelisa-mangalie-a1b395215/" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a> |
+        <a href="https://github.com/Monnelisa" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
