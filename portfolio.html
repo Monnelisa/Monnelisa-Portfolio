@@ -111,13 +111,14 @@
     <!-- Card 5: Contact -->
     <section id="contact" class="section card contact">
       <h1>Contact Me</h1>
-      <form id="ajax-contact" method="post" action="send.php" class="contact-form">
-        <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required>
-        <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required>
-        <textarea name="message" id="message" placeholder="Your Message" class="form-control" required></textarea>
-        <button type="submit" id="submit">Send Message</button>
-      </form>
-      <div id="form-messages"></div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">       
+          <input type="hidden" name="access_key" value="630da6cf-f02f-4ba4-b189-459262370abe">>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          
+          <button type="submit">Send Message</button>
+        </form>
       <div class="scroll-indicator">&gt;</div>
     </section>
 
@@ -125,7 +126,7 @@
     <footer id="footer" class="section card footer">
       <p>CONNECT WITH ME</p>
       <p>
-        <a href="Monnelisa_CV.pdf" download>📄 Download My CV</a>
+        <a href="Monnelisa Mangalie.pdf" download>📄 Download My CV</a>
       </p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/monnelisa-mangalie-a1b395215/" target="_blank">
