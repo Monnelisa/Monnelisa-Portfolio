@@ -281,3 +281,59 @@ body {
 .social-links a:hover i {
   color: #ff6363;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .navbar li {
+    margin: 0.5rem 0;
+  }
+
+  /* Section Cards */
+  .card {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+
+  .card h1 {
+    font-size: 2rem; /* smaller for mobile */
+  }
+  .card h2 {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* Intro photo */
+  .intro-photo {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* Scroll indicator */
+  .scroll-indicator {
+    font-size: 2rem;
+    bottom: 10px;
+  }
+
+  /* Project video */
+  .project-video {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  /* Contact form */
+  .contact-form {
+    width: 90%;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
