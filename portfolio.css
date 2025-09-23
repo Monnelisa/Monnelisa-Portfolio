@@ -202,25 +202,35 @@ body {
   font-size: 0.9rem;
   font-weight: bold;
 }
-.project-description {
-  margin: 1rem 0 2rem 0;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #fff;
-}
-.project-video {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+.projects {
+  text-align: center;
 }
 
-.project-video video {
-  width: 100%;
-  height: auto;
-  display: block;
+.projects-container {
+  display: flex;
+  overflow-x: auto;   /* Enables sideways scroll */
+  gap: 2rem;
+  padding: 2rem;
+  scroll-snap-type: x mandatory; /* Smooth snapping */
+  -webkit-overflow-scrolling: touch; /* Mobile smooth scroll */
 }
+
+.project-item {
+  flex: 0 0 80%; /* Each project takes ~80% of screen */
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  scroll-snap-align: center; /* Snaps each card in the middle */
+}
+
+.project-item video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
 
 /* Contact form */
 .contact-form {
@@ -245,7 +255,6 @@ body {
   border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
 }
 .contact-form button:hover {
   background: #9940ff;
@@ -282,15 +291,52 @@ body {
   color: #ff6363;
 }
 
-/* Mobile responsive styles */
 @media (max-width: 768px) {
   /* Navbar */
-  .navbar ul {
-    flex-direction: column;
-    gap: 0.5rem;
+    .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    padding: 1rem;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+    overflow-x: auto; /* allow horizontal scroll on small screens */
   }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* prevent wrapping to multiple lines */
+  }
+
   .navbar li {
-    margin: 0.5rem 0;
+    margin: 0 1rem;
+    white-space: nowrap; /* prevent text from breaking */
+  }
+
+  .navbar a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #ff6363;
+  }
+
+  /* Optional: add scrollbar style for horizontal scroll on mobile */
+  .navbar::-webkit-scrollbar {
+    height: 6px;
+  }
+  .navbar::-webkit-scrollbar-thumb {
+    background-color: #ff6363;
+    border-radius: 3px;
   }
 
   /* Section Cards */
