@@ -16,7 +16,7 @@ function typeWriter(elementId, text, speed = 100) {
 
 // Run when page loads
 document.addEventListener("DOMContentLoaded", () => {
-  typeWriter("job-titles", "Software QA Tester / Web Developer / Application Support", 80);
+  typeWriter("job-titles", "Software QA Analyst / Project Coordinator / Application Support", 80);
 });
 
 
