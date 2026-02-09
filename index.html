@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,153 +9,238 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
   <link rel="stylesheet" href="portfolio.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="navbar">
     <ul>
       <li><a href="#intro">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about">Profile</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#footer">CV</a></li>
+      <li><a class="nav-resume" href="Monnelisa Mangalie.pdf" download>Resume</a></li>
     </ul>
   </nav>
 
-  <div id="fullpage">
-    <!-- Card 1: Intro -->
-    <section id="intro" class="section card intro">
-      <!-- Personal Photo -->
-      <div class="intro-photo">
-        <img src="Monnelisa.jpg" alt="Monnelisa Mangalie" />
+  <main id="main">
+    <!-- Hero -->
+    <section id="intro" class="section hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Software Quality Assurance</p>
+          <h1>Monnelisa Mangalie</h1>
+          <p class="tagline">
+            QA analyst focused on reliable releases, clear communication, and user-centered quality across web and application systems.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="Monnelisa Mangalie.pdf" download>Download Resume</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+          <ul class="quick-facts">
+            <li>Manual + automation testing</li>
+            <li>Functional, regression, integration, and API coverage</li>
+            <li>Agile delivery and release readiness support</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <div class="intro-photo">
+            <img src="Monnelisa.jpg" alt="Monnelisa Mangalie" />
+          </div>
+          <div class="core-list">
+            <h2>Core Competencies</h2>
+            <ul class="list">
+              <li>Test planning and execution</li>
+              <li>Defect triage and Jira workflows</li>
+              <li>Automation with Selenium</li>
+              <li>UAT coordination and sign-off</li>
+              <li>Clear client briefs and documentation</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <h1>Monnelisa Mangalie</h1>
-      <div class="scroll-indicator">&gt;</div>
-      <h2 id="job-titles"></h2>
     </section>
 
-    <!-- Card 2: About Me -->
-    <section id="about" class="section card about">
-      <h1>About Me</h1>
+    <!-- Profile -->
+    <section id="about" class="section profile">
+      <div class="section-head">
+        <p class="eyebrow">Profile</p>
+        <h1>Quality-first mindset with strong delivery support</h1>
+      </div>
+      <div class="profile-grid">
         <p>
-          I am a Software Quality Assurance Analyst with hands-on experience in manual and automated testing across web and application-based systems. 
-          My background includes functional, regression, system, integration, and API testing, with practical experience using tools such as Selenium for automation and Jira for defect tracking and delivery support. 
+          I am a Software Quality Assurance Analyst with hands-on experience in manual and automated testing across web and application-based systems.
+          My background includes functional, regression, system, integration, and API testing, with practical experience using Selenium for automation and Jira for defect tracking.
           I focus on ensuring software reliability, usability, and high-quality user experiences throughout the development lifecycle.
-
-          Beyond testing, I work closely with developers, project managers, and stakeholders in an agile startup environment, supporting sprint activities, user acceptance testing, and release readiness. 
-          I have also contributed to creating clear client briefs and coordinating sign-off for new features before development begins, helping reduce rework and scope-related risks.
-
-          I have a solid technical foundation in HTML, CSS, and JavaScript, with working knowledge of Python, Java, and C#, which allows me to collaborate effectively with engineering teams and understand system behaviour beyond the surface level. 
-          While Quality Assurance remains my core strength, I am intentionally growing toward a hybrid role that combines QA with technical project coordination and delivery support.
         </p>
-      <div class="scroll-indicator">&gt;</div>
+        <p>
+          Beyond testing, I collaborate closely with developers, project managers, and stakeholders in an agile startup environment, supporting sprint activities,
+          user acceptance testing, and release readiness. I have also contributed to creating clear client briefs and coordinating sign-off for new features
+          before development begins, helping reduce rework and scope-related risks.
+        </p>
+        <p>
+          I have a strong foundation in HTML, CSS, and JavaScript, with working knowledge of Python, Java, and C#. This allows me to collaborate effectively
+          with engineering teams and understand system behavior beyond the surface level. While QA remains my core strength, I am growing toward a hybrid role
+          that combines QA with technical project coordination and delivery support.
+        </p>
+      </div>
+      <div class="callout">
+        <h2>What recruiters care about</h2>
+        <ul class="list">
+          <li>Clear test coverage across critical workflows</li>
+          <li>Strong bug reports that accelerate fixes</li>
+          <li>Release confidence through UAT and regression discipline</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Card 3: Skills -->
-    <section id="skills" class="section card skills">
-      <h1>My Skills</h1>
-      <div class="container-skillbar">
-        <div class="skillbar" data-percent="90%">
-          <div class="skillbar-title"><span>HTML</span></div>
-          <div class="skillbar-bar"></div>
-          <div class="skill-bar-percent">90%</div>
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h1>Testing, tools, and technical foundations</h1>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h2>Testing Types</h2>
+          <ul class="list">
+            <li>Functional and regression testing</li>
+            <li>System and integration testing</li>
+            <li>API testing</li>
+            <li>User acceptance testing</li>
+          </ul>
         </div>
-        <div class="skillbar" data-percent="80%">
-          <div class="skillbar-title"><span>CSS</span></div>
-          <div class="skillbar-bar"></div>
-          <div class="skill-bar-percent">80%</div>
+        <div class="skill-card">
+          <h2>Automation and Tools</h2>
+          <ul class="list">
+            <li>Selenium</li>
+            <li>Jira</li>
+            <li>Test case design and execution</li>
+            <li>Defect tracking and triage</li>
+          </ul>
         </div>
-        <div class="skillbar" data-percent="70%">
-          <div class="skillbar-title"><span>JavaScript</span></div>
-          <div class="skillbar-bar"></div>
-          <div class="skill-bar-percent">70%</div>
-        </div>
-        <div class="skillbar" data-percent="75%">
-          <div class="skillbar-title"><span>Python</span></div>
-          <div class="skillbar-bar"></div>
-          <div class="skill-bar-percent">75%</div>
-        </div>
-        <div class="skillbar" data-percent="80%">
-          <div class="skillbar-title"><span>Java</span></div>
-          <div class="skillbar-bar"></div>
-          <div class="skill-bar-percent">80%</div>
-        </div>
-        <div class="skillbar" data-percent="70%">
-          <div class="skillbar-title"><span>Selenium</span></div>
-          <div class="skillbar-bar"></div>
-          <div class="skill-bar-percent">85%</div>
+        <div class="skill-card">
+          <h2>Technical Stack</h2>
+          <ul class="list">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java, C# (working knowledge)</li>
+            <li>SQL fundamentals</li>
+            <li>Agile delivery support</li>
+          </ul>
         </div>
       </div>
-      <div class="scroll-indicator">&gt;</div>
     </section>
 
-    <!-- Card 4: Projects -->
-    <section id="projects" class="section card projects">
-      <h1>Projects</h1>
-      <div class="projects-container">
-          <!-- Project 1 -->
-          <div class="project-item">
-            <video autoplay muted loop playsinline>
-              <source src="CodeBlanks.mp4" type="video/mp4" />
-              Your browser does not support video playback.
-            </video>
-            <p><strong>Code Blanks Game</strong><br>
-            A quiz-style coding game with fill-the-blanks, debug challenges, and multiple choice questions.</p>
-            <p>
-            <a href="https://github.com/Monnelisa/Code-Blanks" target="_blank">GitHub Repo</a> |
-            <a href="https://codeblanks.netlify.app/" target="_blank">Play Online</a>
-            </p> 
-            </div>
-
-          <!-- Project 2 -->
-          <div class="project-item">
+    <!-- Projects -->
+    <section id="projects" class="section projects">
+      <div class="section-head">
+        <p class="eyebrow">Projects</p>
+        <h1>Quality-minded builds and testable systems</h1>
+      </div>
+      <div class="projects-grid">
+        <article class="project-item">
+          <div class="media media-fill">
+            <div class="project-tag">Automation Framework</div>
+            <div class="project-title">SauceDemo Automation Framework</div>
+            <div class="project-subtitle">C# Selenium • E-commerce QA</div>
+          </div>
+          <div class="project-body">
+            <h2>Enterprise-style test automation for e-commerce</h2>
+            <ul class="list project-list">
+              <li>Built a C# Selenium WebDriver framework using POM and SOLID principles.</li>
+              <li>Authored 39 automated test cases covering login, search, cart, checkout, and end-to-end flows.</li>
+              <li>Implemented NUnit assertions, parameterized tests, and Smoke/Regression/Functional categories.</li>
+              <li>Created reusable components: DriverFactory, BasePage, WaitHelper, DataHelper.</li>
+              <li>Integrated Serilog logging with automatic screenshots on failure.</li>
+              <li>Configured GitHub Actions CI for automated execution and artifacts.</li>
+              <li>Externalized config via appsettings.json with environment support.</li>
+              <li>Applied explicit waits, retry logic, exception handling, and dynamic locators.</li>
+            </ul>
+            <p class="tech-stack"><strong>Tech stack:</strong> C#, .NET, Selenium WebDriver, NUnit, GitHub Actions, Serilog, JSON, POM, CI/CD</p>
+            <p class="skills-demonstrated"><strong>Skills demonstrated:</strong> Automation framework design, E2E testing, regression testing, debugging, CI integration</p>
+          </div>
+        </article>
+        <article class="project-item">
+          <div class="media">
             <video autoplay muted loop playsinline>
               <source src="DevHangman.mp4" type="video/mp4" />
               Your browser does not support video playback.
             </video>
-            <p><strong>Terminal Hangman</strong><br>
-            Python + SQL game with 3 levels, pass rate system, and ASCII hangman figure.</p>
-            <p>
-              <a href="https://github.com/Monnelisa/DevelopersHangman" target="_blank">GitHub Repo</a>
-            </p>
           </div>
-
-          <!-- Add more projects here -->
-        </div>
-      </section>
-
-    <!-- Card 5: Contact -->
-    <section id="contact" class="section card contact">
-      <h1>Contact Me</h1>
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">       
-          <input type="hidden" name="access_key" value="630da6cf-f02f-4ba4-b189-459262370abe">>
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          
-          <button type="submit">Send Message</button>
-        </form>
-      <div class="scroll-indicator">&gt;</div>
+          <div class="project-body">
+            <h2>CodeBlanks: Educational Quiz Web App</h2>
+            <p>
+              Gamified learning platform for programming terminology and concepts. Built with QA focus using automated unit tests
+              and manual exploratory coverage.
+            </p>
+            <ul class="list project-list">
+              <li>Implemented fill-in-the-blank and multiple choice modes with difficulty levels.</li>
+              <li>Built core game engine with dynamic question selection and progress tracking.</li>
+              <li>Developed input validation, normalization logic, and scoring algorithms.</li>
+              <li>Created responsive UI with immediate visual/audio feedback.</li>
+              <li>Wrote Jest unit tests for normalization, filtering, shuffling, and mode selection.</li>
+              <li>Followed test-driven principles for utilities before UI integration.</li>
+              <li>Performed manual exploratory and regression testing alongside automation.</li>
+              <li>Structured modular JavaScript for maintainability and separation of concerns.</li>
+            </ul>
+            <p class="tech-stack"><strong>Tech stack:</strong> JavaScript, HTML, CSS, Jest, npm, Git, GitHub</p>
+            <p class="skills-demonstrated"><strong>Skills demonstrated:</strong> Unit testing, test automation, frontend QA, validation logic, debugging, SDLC, clean code</p>
+            <div class="project-links">
+              <a href="https://github.com/Monnelisa/Code-Blanks" target="_blank">GitHub Repo</a>
+              <a href="https://codeblanks.netlify.app/" target="_blank">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- Card 6: Footer -->
-    <footer id="footer" class="section card footer">
-      <p>CONNECT WITH ME</p>
-      <p>
-        <a href="Monnelisa Mangalie.pdf" download>📄 Download My CV</a>
-      </p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/monnelisa-mangalie-a1b395215/" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a> |
-        <a href="https://github.com/Monnelisa" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h1>Lets connect</h1>
       </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h2>Direct links</h2>
+          <p>Preferred: LinkedIn for recruiter outreach and quick responses.</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/monnelisa-mangalie-a1b395215/" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Monnelisa" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="Monnelisa Mangalie.pdf" download>
+              <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+          </div>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="630da6cf-f02f-4ba4-b189-459262370abe">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@email.com" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" placeholder="Tell me about the role or project" required></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <p>Quality-first QA portfolio</p>
+      <p>Monnelisa Mangalie</p>
     </footer>
-  </div>
+  </main>
 
   <script src="portfolio.js"></script>
 </body>
