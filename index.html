@@ -9,19 +9,28 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
   <link rel="stylesheet" href="portfolio.css" />
+  <link rel="icon" href="M-icon.jpg" type="image/jpeg" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="navbar">
-    <ul>
-      <li><a href="#intro">Home</a></li>
-      <li><a href="#about">Profile</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a class="nav-resume" href="Monnelisa Mangalie.pdf" download>Resume</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a class="nav-brand" href="#intro">
+        <img src="M-icon.jpg" alt="Monnelisa Mangalie icon" />
+        <span>Monnelisa</span>
+      </a>
+      <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-resume" href="Monnelisa Mangalie.pdf" download>Resume</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main id="main">
@@ -124,7 +133,7 @@
           <h2>Technical Stack</h2>
           <ul class="list">
             <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java, C# (working knowledge)</li>
+            <li>Python, Java, C#</li>
             <li>SQL fundamentals</li>
             <li>Agile delivery support</li>
           </ul>
@@ -159,12 +168,15 @@
             </ul>
             <p class="tech-stack"><strong>Tech stack:</strong> C#, .NET, Selenium WebDriver, NUnit, GitHub Actions, Serilog, JSON, POM, CI/CD</p>
             <p class="skills-demonstrated"><strong>Skills demonstrated:</strong> Automation framework design, E2E testing, regression testing, debugging, CI integration</p>
+            <div class="project-links">
+              <a href="https://github.com/Monnelisa/SauceDemo-Automation-Framework" target="_blank">GitHub Repo</a>
+            </div>
           </div>
         </article>
         <article class="project-item">
           <div class="media">
             <video autoplay muted loop playsinline>
-              <source src="DevHangman.mp4" type="video/mp4" />
+              <source src="CodeBlanks.mp4" type="video/mp4" />
               Your browser does not support video playback.
             </video>
           </div>
