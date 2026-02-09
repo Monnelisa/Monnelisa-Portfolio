@@ -730,4 +730,22 @@ main {
     width: 180px;
     height: 180px;
   }
+
+  .skills-carousel {
+    padding: 1rem 2.4rem;
+  }
+
+  .carousel-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 0.95rem;
+  }
+
+  .media-overlay .project-title {
+    font-size: 1.4rem;
+  }
+
+  .media-overlay .project-subtitle {
+    font-size: 0.9rem;
+  }
 }
