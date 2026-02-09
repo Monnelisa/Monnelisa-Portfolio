@@ -23,8 +23,6 @@
         <li><a href="#intro">Home</a></li>
         <li><a href="#about">Profile</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a class="nav-resume" href="Monnelisa Mangalie.pdf" download>Resume</a></li>
@@ -101,68 +99,74 @@
         <p class="eyebrow">Skills</p>
         <h1>Technical Skills</h1>
       </div>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h2>Manual Testing</h2>
-          <ul class="list">
-            <li>Regression testing</li>
-            <li>Functional testing</li>
-            <li>Smoke testing</li>
-            <li>Exploratory testing</li>
-            <li>User acceptance testing</li>
-          </ul>
+      <div class="skills-carousel">
+        <button class="carousel-arrow left" type="button" aria-label="Previous skill card">&#8592;</button>
+        <div class="skills-viewport" tabindex="0" aria-label="Skills carousel">
+          <div class="skills-track">
+            <div class="skill-card">
+              <h2>Manual Testing</h2>
+              <ul class="list">
+                <li>Regression Testing</li>
+                <li>Functional Testing</li>
+                <li>Smoke Testing</li>
+                <li>Exploratory Testing</li>
+                <li>UAT</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>Automation</h2>
+              <ul class="list">
+                <li>Selenium WebDriver</li>
+                <li>Postman Collections</li>
+                <li>C# and Python automation</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>API Testing</h2>
+              <ul class="list">
+                <li>REST</li>
+                <li>Swagger</li>
+                <li>Postman</li>
+                <li>Response validation</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>Test Artifacts</h2>
+              <ul class="list">
+                <li>Test plans</li>
+                <li>Test cases</li>
+                <li>Bug reports</li>
+                <li>Release notes</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>Programming Languages</h2>
+              <ul class="list">
+                <li>Python, Java, JavaScript, C#</li>
+                <li>HTML, CSS, SQL</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>Frameworks</h2>
+              <ul class="list">
+                <li>Pytest, JUnit, TestNG</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>Version Control</h2>
+              <ul class="list">
+                <li>Git and GitHub</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h2>Operating Systems</h2>
+              <ul class="list">
+                <li>Windows, Linux, macOS</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="skill-card">
-          <h2>Automation and Tools</h2>
-          <ul class="list">
-            <li>Selenium WebDriver</li>
-            <li>Postman Collections</li>
-            <li>C# and Python automation</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h2>API Testing</h2>
-          <ul class="list">
-            <li>REST</li>
-            <li>Swagger</li>
-            <li>Postman</li>
-            <li>Response validation</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h2>Test Artifacts</h2>
-          <ul class="list">
-            <li>Test plans</li>
-            <li>Test cases</li>
-            <li>Bug reports</li>
-            <li>Release notes</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h2>Programming Languages</h2>
-          <ul class="list">
-            <li>Python, Java, JavaScript, C#</li>
-            <li>HTML, CSS, SQL</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h2>Frameworks</h2>
-          <ul class="list">
-            <li>Pytest, JUnit, TestNG</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h2>Version Control</h2>
-          <ul class="list">
-            <li>Git and GitHub</li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h2>Operating Systems</h2>
-          <ul class="list">
-            <li>Windows, Linux, macOS</li>
-          </ul>
-        </div>
+        <button class="carousel-arrow right" type="button" aria-label="Next skill card">&#8594;</button>
       </div>
     </section>
 
@@ -199,7 +203,10 @@
           </div>
         </article>
         <article class="project-item">
-          <div class="media">
+          <div class="media media-overlay">
+            <div class="project-tag">Web App Demo</div>
+            <div class="project-title">CodeBlanks</div>
+            <div class="project-subtitle">JavaScript • Educational Quiz</div>
             <video autoplay muted loop playsinline>
               <source src="CodeBlanks.mp4" type="video/mp4" />
               Your browser does not support video playback.
@@ -241,7 +248,8 @@
       <div class="contact-grid">
         <div class="contact-card">
           <h2>Direct links</h2>
-          <p>Preferred: LinkedIn for recruiter outreach and quick responses.</p>
+          <p><i class="fa-solid fa-envelope"></i> Preferred outreach: monnelisa01mangalie@gmail.com</p>
+          <p>LinkedIn: linkedin.com/in/monnelisa-mangalie-a1b395215</p>
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/monnelisa-mangalie-a1b395215/" target="_blank">
               <i class="fab fa-linkedin"></i> LinkedIn
