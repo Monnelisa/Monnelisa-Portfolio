@@ -257,15 +257,16 @@ main {
   background: linear-gradient(145deg, rgba(18, 26, 36, 0.95), rgba(10, 15, 23, 0.95));
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 2rem;
+  padding: 2.2rem;
   box-shadow: var(--shadow);
   display: grid;
   gap: 2rem;
+  justify-items: center;
 }
 
 .intro-photo {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid rgba(255, 255, 255, 0.08);
@@ -283,6 +284,10 @@ main {
   font-family: 'Fraunces', serif;
   font-size: 1.4rem;
   margin-bottom: 0.75rem;
+}
+
+.core-list {
+  width: 100%;
 }
 
 .contact-chip {
@@ -575,7 +580,7 @@ main {
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -591,6 +596,21 @@ main {
 
 .education-card h2 {
   font-family: 'Fraunces', serif;
+}
+
+.education-card h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.05rem;
+  margin-top: 0.4rem;
+}
+
+.education-card p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.certifications-card {
+  margin-top: 1.5rem;
 }
 
 .contact-grid {
@@ -714,6 +734,11 @@ main {
   .project-item video {
     height: 260px;
   }
+
+  .intro-photo {
+    width: 240px;
+    height: 240px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -727,8 +752,8 @@ main {
   }
 
   .intro-photo {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
   }
 
   .skills-carousel {

@@ -95,7 +95,7 @@ const startSkillsCarousel = () => {
     if (prefersReduced) {
       return;
     }
-    timer = setInterval(next, 2400);
+    timer = setInterval(next, 2000);
   };
 
   const stop = () => {
